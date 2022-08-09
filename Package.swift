@@ -19,6 +19,7 @@ let package = Package(
             publicHeadersPath: "Public",
             cSettings: [
             .define("HAVE_CONFIG_H"),
+            .define("USE_BUILTIN_TZDATA"),
             .define("_GNU_SOURCE", .when(platforms: [Platform.linux])),
             .define("HAVE_ENDIAN_H", .when(platforms: [Platform.linux])),
             .define("HAVE_BYTESWAP_H", .when(platforms: [Platform.linux])),
